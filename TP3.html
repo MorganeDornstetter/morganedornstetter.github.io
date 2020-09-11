@@ -1,162 +1,45 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background:palegoldenrod;
-        }
-        .grid
-        {
-            display:inline-grid;
-            grid-template-columns: repeat(9, 40px);
-            grid-gap : 10px;
-        }
-        .grid input
-        /* PERMET DE SELECTIONNER LES INPUT A L'INTERIEUR DES DIV */
-        {
-            width:35px;
-            height:35px;
-            border-bottom: 2px black;
-            border-radius:20%;
-        }
-        .grid>div
-        /* SELECTIONNE LES DIV ENFANT DE LA DIV PARENT QUI POSSEDE LA CLASSE GRID*/
-        {
-            padding:2px;
-        }
-       
-    </style>
 </head>
-<body>
+<style>
+    .accueil {
+        height: 100vh;
+        background: red;
 
-    <div class="grid">
-
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-
-
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-
-
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-
-
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-
-
-
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-
-
-
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-
-
-
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-
-
-
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-
-
-
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-<div><input></div>
-
-</div>
-
-
-<script>
-
-    var tableau = [0, 9, 5, 3, 0, 8, 7, 0, 1, 8, 2, 1, 0, 7, 0, 0, 6, 0, 6, 7, 0, 4, 0, 0, 8, 0, 0, 2, 4, 0, 0, 0, 9, 0, 5, 0, 0, 0, 9, 0, 0, 0, 2, 0, 0, 0, 1, 0, 2, 0, 0, 0, 4, 8, 0, 0, 4, 0, 0, 2, 0, 8, 9, 0, 6, 0, 0, 3, 0, 1, 7, 2, 1, 0, 2, 8, 0, 7, 6, 3, 0];
-
-    var input = document.querySelector(".grid");
-
-
-    for (var i=0; i<input.children.length; i++){
-    
-    if (tableau[i]!=0)
-    {
-        var resultat = input.children[i].children[0];
-        resultat.value = tableau[i];
-        resultat.disabled=true;
     }
-}
-</script>
 
+    .po {
+        height: 100vh;
+        background: blue;
+    }
+
+    .green {
+        height: 100vh;
+        background: green;
+    }
+
+    button {
+        margin-top: 100%;
+        margin-left:50%;
+    }
+</style>
+
+<body>
+    <div class="accueil">
+        <button>BOUTON</button>
+
+    </div>
+    <div class="po">
+
+    </div>
+    <div class="green">
+
+    </div>
 </body>
+
 </html>
